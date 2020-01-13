@@ -1,0 +1,16 @@
+1. play/pause icon and word not properly switching when pressed and a interaction is active. functionality still works. 
+	could be fixed by implementing a bool that is set to the intended state instead of checking the material or by using the text as the checking condition.
+
+2. Hololens 2 Emulator is not a supported device for Vuforia and also throws a exception when the battery is trying to be checked. no fixes known.
+
+3. the book page turning clips through other pages. fix model or animation.
+
+4. the book panning gesture sometimes does not get recognized. fix unknown, issue could be with the experimental Hololens 2's we were testing with or the if statement to check which direction to turn the page.
+
+5. upon switching images really fast multiple interactions can occur. fix unknown and might be unneeded.
+
+6. overlapping audio most likely related to 5. fix unknown and might be unneeded.
+
+7. hand tracking is off in application. fix could be re-setup of MRTKv2 settings in the MixedRealityToolkit object in the scene. issue could also be because of the experimental Hololens 2's we were testing with.
+
+8. PC build is run through a emulator. fix unknown without having different builds and using different builds has its own issues.

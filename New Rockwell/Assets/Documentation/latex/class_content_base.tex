@@ -1,0 +1,181 @@
+\hypertarget{class_content_base}{}\doxysection{Content\+Base Class Reference}
+\label{class_content_base}\index{ContentBase@{ContentBase}}
+
+
+the base class for all content/interactions for a Image target  
+
+
+Inheritance diagram for Content\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.800000cm]{class_content_base}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_content_base_a877a9a1e741ef9738c706a2ffd25f9fe}{Positioning}} \{ \newline
+{\bfseries k\+None} = 0, 
+{\bfseries k\+Top} = 1, 
+{\bfseries k\+Right} = 2, 
+{\bfseries k\+Bottom} = 3, 
+\newline
+{\bfseries k\+Left} = 4, 
+{\bfseries k\+Center} = 5
+ \}
+\begin{DoxyCompactList}\small\item\em enum to enable easy changing of content position around the Image\+Target also allows for more options \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_content_base_aea033966d3bce7abe7fa1478a8166fd0}{Init}} (Vector3 image\+Size)
+\begin{DoxyCompactList}\small\item\em initializes the content and makes it visible if applicable \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_content_base_a6230fa3bf068e488363d6b19165ac75e}{Start\+Content}} ()
+\begin{DoxyCompactList}\small\item\em starts/resumes the content \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_content_base_a8730bf0241dbeeafa20d8335aab00281}{Pause\+Content}} ()
+\begin{DoxyCompactList}\small\item\em Pauses the content \end{DoxyCompactList}\item 
+abstract void \mbox{\hyperlink{class_content_base_a5c2cbec4d4b19dcd9caf9d9dfa1a8288}{Reset\+Content}} ()
+\begin{DoxyCompactList}\small\item\em Stops the content and puts it back into initial state \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_content_base_afab55cb6839c393fe4ecf3b19a1fcd39}{Update\+Content}} ()
+\begin{DoxyCompactList}\small\item\em updates the content. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_content_base_a12eb6039a763bd8dde716edd7e3c283c}{Adjust\+Placement}} ()
+\begin{DoxyCompactList}\small\item\em adjusts the content\textquotesingle{}s gameobject based off it\textquotesingle{}s content size \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_content_base_a970e7171e37dc0223b419eeab44754bc}{Set\+Anchor}} (Vector3 My\+I\+MG)
+\begin{DoxyCompactList}\small\item\em positions the anchors based off Image\+Target\textquotesingle{}s image size \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_content_base_ae27346ac15efe35a38b3081e943b3801}\label{class_content_base_ae27346ac15efe35a38b3081e943b3801}} 
+Game\+Object \mbox{\hyperlink{class_content_base_ae27346ac15efe35a38b3081e943b3801}{m\+\_\+anchor}}
+\begin{DoxyCompactList}\small\item\em the anchor for the content \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_content_base_af6eae7da434b2b6909236a329e8a2797}\label{class_content_base_af6eae7da434b2b6909236a329e8a2797}} 
+\mbox{\hyperlink{class_content_base_a877a9a1e741ef9738c706a2ffd25f9fe}{Positioning}} \mbox{\hyperlink{class_content_base_af6eae7da434b2b6909236a329e8a2797}{m\+\_\+position}} = Positioning.\+k\+None
+\begin{DoxyCompactList}\small\item\em the positioning of the content \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+the base class for all content/interactions for a Image target 
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_content_base_a877a9a1e741ef9738c706a2ffd25f9fe}\label{class_content_base_a877a9a1e741ef9738c706a2ffd25f9fe}} 
+\index{ContentBase@{ContentBase}!Positioning@{Positioning}}
+\index{Positioning@{Positioning}!ContentBase@{ContentBase}}
+\doxysubsubsection{\texorpdfstring{Positioning}{Positioning}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_content_base_a877a9a1e741ef9738c706a2ffd25f9fe}{Content\+Base.\+Positioning}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+enum to enable easy changing of content position around the Image\+Target also allows for more options 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_content_base_a12eb6039a763bd8dde716edd7e3c283c}\label{class_content_base_a12eb6039a763bd8dde716edd7e3c283c}} 
+\index{ContentBase@{ContentBase}!AdjustPlacement@{AdjustPlacement}}
+\index{AdjustPlacement@{AdjustPlacement}!ContentBase@{ContentBase}}
+\doxysubsubsection{\texorpdfstring{AdjustPlacement()}{AdjustPlacement()}}
+{\footnotesize\ttfamily void Content\+Base.\+Adjust\+Placement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+adjusts the content\textquotesingle{}s gameobject based off it\textquotesingle{}s content size 
+
+\mbox{\Hypertarget{class_content_base_aea033966d3bce7abe7fa1478a8166fd0}\label{class_content_base_aea033966d3bce7abe7fa1478a8166fd0}} 
+\index{ContentBase@{ContentBase}!Init@{Init}}
+\index{Init@{Init}!ContentBase@{ContentBase}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily virtual void Content\+Base.\+Init (\begin{DoxyParamCaption}\item[{Vector3}]{image\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+initializes the content and makes it visible if applicable 
+
+
+\begin{DoxyParams}{Parameters}
+{\em image\+Size} & the size of the Image\+Target\textquotesingle{}s image \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_book_content_ab7521e128104e41369410bc44e1226f3}{Book\+Content}}, and \mbox{\hyperlink{class_video_content_ab088badac4f799b7fbc44c217bd0a6b4}{Video\+Content}}.
+
+\mbox{\Hypertarget{class_content_base_a8730bf0241dbeeafa20d8335aab00281}\label{class_content_base_a8730bf0241dbeeafa20d8335aab00281}} 
+\index{ContentBase@{ContentBase}!PauseContent@{PauseContent}}
+\index{PauseContent@{PauseContent}!ContentBase@{ContentBase}}
+\doxysubsubsection{\texorpdfstring{PauseContent()}{PauseContent()}}
+{\footnotesize\ttfamily virtual void Content\+Base.\+Pause\+Content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Pauses the content 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_video_content_ae23a987e75007f4bf7b7c2241ce73bbe}{Video\+Content}}, and \mbox{\hyperlink{class_character_content_a50e06e968a6f5bbf9c9a339b5597871a}{Character\+Content}}.
+
+\mbox{\Hypertarget{class_content_base_a5c2cbec4d4b19dcd9caf9d9dfa1a8288}\label{class_content_base_a5c2cbec4d4b19dcd9caf9d9dfa1a8288}} 
+\index{ContentBase@{ContentBase}!ResetContent@{ResetContent}}
+\index{ResetContent@{ResetContent}!ContentBase@{ContentBase}}
+\doxysubsubsection{\texorpdfstring{ResetContent()}{ResetContent()}}
+{\footnotesize\ttfamily abstract void Content\+Base.\+Reset\+Content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Stops the content and puts it back into initial state 
+
+
+
+Implemented in \mbox{\hyperlink{class_book_content_a7c3600cf21af471a4cfc853d8055c9ea}{Book\+Content}}, \mbox{\hyperlink{class_video_content_a2bc104babe6a444c3ec93dea8eb9f260}{Video\+Content}}, \mbox{\hyperlink{class_slideshow_content_aa6ae6fd0684200a897e3b0a540bea124}{Slideshow\+Content}}, \mbox{\hyperlink{class_character_content_aca68a9c6df25b11e45674b9b7cabee00}{Character\+Content}}, and \mbox{\hyperlink{class_image_content_a2ec78790c58c36a78993abb57a3ddfc3}{Image\+Content}}.
+
+\mbox{\Hypertarget{class_content_base_a970e7171e37dc0223b419eeab44754bc}\label{class_content_base_a970e7171e37dc0223b419eeab44754bc}} 
+\index{ContentBase@{ContentBase}!SetAnchor@{SetAnchor}}
+\index{SetAnchor@{SetAnchor}!ContentBase@{ContentBase}}
+\doxysubsubsection{\texorpdfstring{SetAnchor()}{SetAnchor()}}
+{\footnotesize\ttfamily void Content\+Base.\+Set\+Anchor (\begin{DoxyParamCaption}\item[{Vector3}]{My\+I\+MG }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+positions the anchors based off Image\+Target\textquotesingle{}s image size 
+
+
+\begin{DoxyParams}{Parameters}
+{\em My\+I\+MG} & the size of Image\+Target\textquotesingle{}s image\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_content_base_a6230fa3bf068e488363d6b19165ac75e}\label{class_content_base_a6230fa3bf068e488363d6b19165ac75e}} 
+\index{ContentBase@{ContentBase}!StartContent@{StartContent}}
+\index{StartContent@{StartContent}!ContentBase@{ContentBase}}
+\doxysubsubsection{\texorpdfstring{StartContent()}{StartContent()}}
+{\footnotesize\ttfamily abstract void Content\+Base.\+Start\+Content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+starts/resumes the content 
+
+
+
+Implemented in \mbox{\hyperlink{class_book_content_a921c32701acaf6ba8c4fb2aa426d29c7}{Book\+Content}}, \mbox{\hyperlink{class_video_content_a4614ca33a03582db6749464727f777d0}{Video\+Content}}, \mbox{\hyperlink{class_slideshow_content_a8557952a64cb67db295d5fc8ac6fe1de}{Slideshow\+Content}}, \mbox{\hyperlink{class_character_content_a416b17c985aac164362bb094f8423d01}{Character\+Content}}, and \mbox{\hyperlink{class_image_content_a0ab6cd6640322a5d617110ee08af1c9a}{Image\+Content}}.
+
+\mbox{\Hypertarget{class_content_base_afab55cb6839c393fe4ecf3b19a1fcd39}\label{class_content_base_afab55cb6839c393fe4ecf3b19a1fcd39}} 
+\index{ContentBase@{ContentBase}!UpdateContent@{UpdateContent}}
+\index{UpdateContent@{UpdateContent}!ContentBase@{ContentBase}}
+\doxysubsubsection{\texorpdfstring{UpdateContent()}{UpdateContent()}}
+{\footnotesize\ttfamily virtual void Content\+Base.\+Update\+Content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+updates the content. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_slideshow_content_a5da5c32215d05d4505cce8eb7b58a169}{Slideshow\+Content}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Perforce/498\+\_\+\+V\+R\+\_\+\+Skunkworks/\+New Rockwell/\+Assets/\+Scripts/Content\+Base.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,156 @@
+\hypertarget{class_proto_1_1_sbee_1_1_group}{}\doxysection{Proto.\+Sbee.\+Group Class Reference}
+\label{class_proto_1_1_sbee_1_1_group}\index{Proto.Sbee.Group@{Proto.Sbee.Group}}
+
+
+group. contains and create users  
+
+
+Inheritance diagram for Proto.\+Sbee.\+Group\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_proto_1_1_sbee_1_1_group}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_proto_1_1_sbee_1_1_group_aca7ea2ac4fcf06c872d281e715f31024}{Init}} (string leader\+Name, \mbox{\hyperlink{class_proto_1_1_sbee_1_1_headset_device}{Headset\+Device}} headset)
+\begin{DoxyCompactList}\small\item\em default init overide. use this when group name isn\textquotesingle{}t given \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_proto_1_1_sbee_1_1_group_a04008f0812007a696ba7611ec977aaa8}{Init}} (string group\+Name, string leader\+Name, \mbox{\hyperlink{class_proto_1_1_sbee_1_1_headset_device}{Headset\+Device}} headset)
+\begin{DoxyCompactList}\small\item\em overload method for Init. Use when group name is given. \end{DoxyCompactList}\item 
+override \mbox{\hyperlink{interface_proto_1_1_sbee_1_1_i_instantiatable}{I\+Instantiatable}} \mbox{\hyperlink{class_proto_1_1_sbee_1_1_group_a1d4f43bc0cbebf6d8f6bd4c93ec09c51}{Instantiate}} (string name, \mbox{\hyperlink{class_proto_1_1_sbee_1_1_headset_device}{Headset\+Device}} headset, Transform root=null)
+\begin{DoxyCompactList}\small\item\em instantiate a user \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_proto_1_1_sbee_1_1_group_a2ce9122ee0af1cdfb80b6a5a36c04e70}{De\+Init}} ()
+\begin{DoxyCompactList}\small\item\em De initialize \mbox{\hyperlink{class_proto_1_1_sbee_1_1_group}{Group}} remove users and destroy this gameobject \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_proto_1_1_sbee_1_1_group_aa5859cdf89b484f9598f86ae743eafd6}{Delete\+User}} (\mbox{\hyperlink{class_proto_1_1_sbee_1_1_user}{User}} user)
+\begin{DoxyCompactList}\small\item\em delete specific user from the group \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_proto_1_1_sbee_1_1_user}{User}} \mbox{\hyperlink{class_proto_1_1_sbee_1_1_group_a38eeff69306f69509ba4aa5bdc4ceb76}{Get\+User}} (string device\+Name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_proto_1_1_sbee_1_1_group_abb57525c61b337f9d0b3e995323afddf}\label{class_proto_1_1_sbee_1_1_group_abb57525c61b337f9d0b3e995323afddf}} 
+int {\bfseries User\+Count}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+group. contains and create users 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_proto_1_1_sbee_1_1_group_a2ce9122ee0af1cdfb80b6a5a36c04e70}\label{class_proto_1_1_sbee_1_1_group_a2ce9122ee0af1cdfb80b6a5a36c04e70}} 
+\index{Proto.Sbee.Group@{Proto.Sbee.Group}!DeInit@{DeInit}}
+\index{DeInit@{DeInit}!Proto.Sbee.Group@{Proto.Sbee.Group}}
+\doxysubsubsection{\texorpdfstring{DeInit()}{DeInit()}}
+{\footnotesize\ttfamily void Proto.\+Sbee.\+Group.\+De\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+De initialize \mbox{\hyperlink{class_proto_1_1_sbee_1_1_group}{Group}} remove users and destroy this gameobject 
+
+\mbox{\Hypertarget{class_proto_1_1_sbee_1_1_group_aa5859cdf89b484f9598f86ae743eafd6}\label{class_proto_1_1_sbee_1_1_group_aa5859cdf89b484f9598f86ae743eafd6}} 
+\index{Proto.Sbee.Group@{Proto.Sbee.Group}!DeleteUser@{DeleteUser}}
+\index{DeleteUser@{DeleteUser}!Proto.Sbee.Group@{Proto.Sbee.Group}}
+\doxysubsubsection{\texorpdfstring{DeleteUser()}{DeleteUser()}}
+{\footnotesize\ttfamily void Proto.\+Sbee.\+Group.\+Delete\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_proto_1_1_sbee_1_1_user}{User}}}]{user }\end{DoxyParamCaption})}
+
+
+
+delete specific user from the group 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & user to delete\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_proto_1_1_sbee_1_1_group_a38eeff69306f69509ba4aa5bdc4ceb76}\label{class_proto_1_1_sbee_1_1_group_a38eeff69306f69509ba4aa5bdc4ceb76}} 
+\index{Proto.Sbee.Group@{Proto.Sbee.Group}!GetUser@{GetUser}}
+\index{GetUser@{GetUser}!Proto.Sbee.Group@{Proto.Sbee.Group}}
+\doxysubsubsection{\texorpdfstring{GetUser()}{GetUser()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_proto_1_1_sbee_1_1_user}{User}} Proto.\+Sbee.\+Group.\+Get\+User (\begin{DoxyParamCaption}\item[{string}]{device\+Name }\end{DoxyParamCaption})}
+
+
+
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em device\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_proto_1_1_sbee_1_1_group_a04008f0812007a696ba7611ec977aaa8}\label{class_proto_1_1_sbee_1_1_group_a04008f0812007a696ba7611ec977aaa8}} 
+\index{Proto.Sbee.Group@{Proto.Sbee.Group}!Init@{Init}}
+\index{Init@{Init}!Proto.Sbee.Group@{Proto.Sbee.Group}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Proto.\+Sbee.\+Group.\+Init (\begin{DoxyParamCaption}\item[{string}]{group\+Name,  }\item[{string}]{leader\+Name,  }\item[{\mbox{\hyperlink{class_proto_1_1_sbee_1_1_headset_device}{Headset\+Device}}}]{headset }\end{DoxyParamCaption})}
+
+
+
+overload method for Init. Use when group name is given. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\+Name} & name of group\\
+\hline
+{\em leader\+Name} & name of group leader\\
+\hline
+{\em headset} & leader headset\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_proto_1_1_sbee_1_1_group_aca7ea2ac4fcf06c872d281e715f31024}\label{class_proto_1_1_sbee_1_1_group_aca7ea2ac4fcf06c872d281e715f31024}} 
+\index{Proto.Sbee.Group@{Proto.Sbee.Group}!Init@{Init}}
+\index{Init@{Init}!Proto.Sbee.Group@{Proto.Sbee.Group}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Proto.\+Sbee.\+Group.\+Init (\begin{DoxyParamCaption}\item[{string}]{leader\+Name,  }\item[{\mbox{\hyperlink{class_proto_1_1_sbee_1_1_headset_device}{Headset\+Device}}}]{headset }\end{DoxyParamCaption})}
+
+
+
+default init overide. use this when group name isn\textquotesingle{}t given 
+
+
+\begin{DoxyParams}{Parameters}
+{\em leader\+Name} & name of group leader\\
+\hline
+{\em headset} & leader\textquotesingle{}s headset\\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_proto_1_1_sbee_1_1_i_instantiatable}{Proto.\+Sbee.\+I\+Instantiatable}}.
+
+\mbox{\Hypertarget{class_proto_1_1_sbee_1_1_group_a1d4f43bc0cbebf6d8f6bd4c93ec09c51}\label{class_proto_1_1_sbee_1_1_group_a1d4f43bc0cbebf6d8f6bd4c93ec09c51}} 
+\index{Proto.Sbee.Group@{Proto.Sbee.Group}!Instantiate@{Instantiate}}
+\index{Instantiate@{Instantiate}!Proto.Sbee.Group@{Proto.Sbee.Group}}
+\doxysubsubsection{\texorpdfstring{Instantiate()}{Instantiate()}}
+{\footnotesize\ttfamily override \mbox{\hyperlink{interface_proto_1_1_sbee_1_1_i_instantiatable}{I\+Instantiatable}} Proto.\+Sbee.\+Group.\+Instantiate (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{\mbox{\hyperlink{class_proto_1_1_sbee_1_1_headset_device}{Headset\+Device}}}]{headset,  }\item[{Transform}]{root = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+instantiate a user 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+{\em headset} & \\
+\hline
+{\em root} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_proto_1_1_sbee_1_1_instantiator}{Proto.\+Sbee.\+Instantiator}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Perforce/498\+\_\+\+V\+R\+\_\+\+Skunkworks/\+New Rockwell/\+Assets/\+Proto\+\_\+\+U\+I/\+\_\+\+Scripts/\+Internal Objects/Group.\+cs\end{DoxyCompactItemize}

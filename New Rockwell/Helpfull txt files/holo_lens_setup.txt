@@ -1,0 +1,30 @@
+Holo Lens #1 Login details:
+
+Login Name:  Holo One
+Password:  aauHolo#1
+
+
+Holo Lens #2 Login details:
+
+Login Name:  holo2
+Password:  aauholo2
+
+
+
+
+Steps for binding to computer:
+
+1. Broadcast wifi from computer. Go to windows settings, internet, then select mobile hotspot and turn it on. Set an easy password.
+
+2. Download Hololens app from windows store if you haven't already. You do not need to input and windows acct info for this.
+
+3. Turn on hololens, open internet settings.
+
+4. Join the wifi hotspot you made. 
+
+5. Go into advanced settings on the wifi network. Find the IP address, it is typically 192.168.137.120
+
+6. Input that IP into hololens app. Sign in with above credentials. 
+
+7. Done.
+

@@ -1,0 +1,68 @@
+\hypertarget{class_debug_window}{}\doxysection{Debug\+Window Class Reference}
+\label{class_debug_window}\index{DebugWindow@{DebugWindow}}
+
+
+simple debug window script used to help debug in Hololens  
+
+
+Inheritance diagram for Debug\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_debug_window}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_debug_window_a466a630fe59112959a6434d65ea10a6c}{Print\+To\+Hud}} (string info, string stack=\char`\"{}\char`\"{}, Log\+Type type=Log\+Type.\+Exception)
+\begin{DoxyCompactList}\small\item\em function used to print out Debug.\+log messages to UI text. changes the text color based off Log\+Type Log = no color(aka default white color applied), Warning = yellow, Error = red, Exception = green, Assert = blue, default case = cyan \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_debug_window_a2f6f8e9b48d5b85c6f89e21e554bbe51}{Clear\+H\+UD}} ()
+\begin{DoxyCompactList}\small\item\em clears the text to make it easier to read new messages \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_debug_window_acaa8995aed4fe3e8f52c080135d79fcb}\label{class_debug_window_acaa8995aed4fe3e8f52c080135d79fcb}} 
+static \mbox{\hyperlink{class_debug_window}{Debug\+Window}} {\bfseries Instance}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+simple debug window script used to help debug in Hololens 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_debug_window_a2f6f8e9b48d5b85c6f89e21e554bbe51}\label{class_debug_window_a2f6f8e9b48d5b85c6f89e21e554bbe51}} 
+\index{DebugWindow@{DebugWindow}!ClearHUD@{ClearHUD}}
+\index{ClearHUD@{ClearHUD}!DebugWindow@{DebugWindow}}
+\doxysubsubsection{\texorpdfstring{ClearHUD()}{ClearHUD()}}
+{\footnotesize\ttfamily void Debug\+Window.\+Clear\+H\+UD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+clears the text to make it easier to read new messages 
+
+\mbox{\Hypertarget{class_debug_window_a466a630fe59112959a6434d65ea10a6c}\label{class_debug_window_a466a630fe59112959a6434d65ea10a6c}} 
+\index{DebugWindow@{DebugWindow}!PrintToHud@{PrintToHud}}
+\index{PrintToHud@{PrintToHud}!DebugWindow@{DebugWindow}}
+\doxysubsubsection{\texorpdfstring{PrintToHud()}{PrintToHud()}}
+{\footnotesize\ttfamily void Debug\+Window.\+Print\+To\+Hud (\begin{DoxyParamCaption}\item[{string}]{info,  }\item[{string}]{stack = {\ttfamily \char`\"{}\char`\"{}},  }\item[{Log\+Type}]{type = {\ttfamily LogType.Exception} }\end{DoxyParamCaption})}
+
+
+
+function used to print out Debug.\+log messages to UI text. changes the text color based off Log\+Type Log = no color(aka default white color applied), Warning = yellow, Error = red, Exception = green, Assert = blue, default case = cyan 
+
+
+\begin{DoxyParams}{Parameters}
+{\em info} & the message to print\\
+\hline
+{\em stack} & unused but needed to add to log\+Message\+Received\\
+\hline
+{\em type} & the category of the message like log or error\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Perforce/498\+\_\+\+V\+R\+\_\+\+Skunkworks/\+New Rockwell/\+Assets/\+Scripts/Debug\+Window.\+cs\end{DoxyCompactItemize}

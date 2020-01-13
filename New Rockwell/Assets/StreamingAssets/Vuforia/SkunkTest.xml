@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="promethean_challenge" size="4.167000 5.556000" />
+    <ImageTarget name="smashing_pumpkins" size="4.792000 6.819918" />
+  </Tracking>
+</QCARConfig>

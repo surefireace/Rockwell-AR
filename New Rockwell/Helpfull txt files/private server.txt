@@ -1,0 +1,20 @@
+1. download server SDK found here: https://www.photonengine.com/en-us/sdks#server-sdkserverserver
+ps no need for the plugin sdk for server
+
+2. run the sdk application and choose the location for it to extract.
+
+3. follow instructions here:https://doc.photonengine.com/en-us/server/current/getting-started/photon-server-in-5min
+to get the server running make sure to set the Game Server IP config to public/automatic
+ps dont use MMO demo
+
+4. go into unity under Window > Photon Unity Networking > Highlite server settings. uncheck "Use Name Server" and 
+enter the IP adress of the server the same one that the Game Server IP config is set too. port 4530 and protocol Tcp.
+
+5. app id realtime doesnt matter but make sure it isnt blank same for app id chat and app version. 
+fixed region can and should be left empty. everything else should not be messed with.
+
+6. make sure that the server is running and start the application and connect. if there are issues try 
+running the TestClient that comes with the server. open in a text editor:
+Photon-OnPremise-Server-SDK_v4-0-29-11263 > deploy > bin_tools > stardust.client > Photon.StarDust.Client.exe.config
+change the protocol to Tcp, change the ServerAddress to the same that the server is using IP:port, and
+change StartupInterval to 1000

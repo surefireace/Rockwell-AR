@@ -1,0 +1,224 @@
+\hypertarget{class_rockwell_lobby}{}\doxysection{Rockwell\+Lobby Class Reference}
+\label{class_rockwell_lobby}\index{RockwellLobby@{RockwellLobby}}
+
+
+this class manages the lobby and the groups. based off the Launcher class in Photon\textquotesingle{}s tutorial  
+
+
+Inheritance diagram for Rockwell\+Lobby\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_rockwell_lobby}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_rockwell_lobby_a3c98b411eb74b5c9efe61c4040aed04c}{Connect}} ()
+\begin{DoxyCompactList}\small\item\em Start the connection process. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_rockwell_lobby_aafb421e3a5d5bf87aaada0f0963bd632}{On\+Connected\+To\+Master}} ()
+\begin{DoxyCompactList}\small\item\em Called after the connection to the master is established and authenticated \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_rockwell_lobby_a8e7a0e82f7a3b8e59ca4dd5063ba8fe5}{On\+Join\+Random\+Failed}} (short return\+Code, string message)
+\begin{DoxyCompactList}\small\item\em Called when a Join\+Random() call failed. The parameter provides Error\+Code and message. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_rockwell_lobby_aad772eeccf33833e952247dfae17fff8}{On\+Disconnected}} (Disconnect\+Cause cause)
+\begin{DoxyCompactList}\small\item\em Called after disconnecting from the Photon server. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_rockwell_lobby_af7b835f23ea2b9ed31b24eb4debaec00}{On\+Joined\+Room}} ()
+\begin{DoxyCompactList}\small\item\em Called when entering a room (by creating or joining it). Called on all clients (including the Master Client). \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_rockwell_lobby_a1dc6ae598151765b958c9756e6ac91ff}{On\+Create\+Room\+Failed}} (short return\+Code, string message)
+\begin{DoxyCompactList}\small\item\em Called when the server couldn\textquotesingle{}t create a room (Op\+Create\+Room failed). \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_rockwell_lobby_aa1fcf01e289ecc19a95b98fa284160bd}{On\+Master\+Client\+Switched}} (Player new\+Master\+Client)
+\begin{DoxyCompactList}\small\item\em Called after switching to a new Master\+Client when the current one leaves. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_rockwell_lobby_a896fd145127303d29cdfea795f9d7bf8}{On\+Player\+Entered\+Room}} (Player new\+Player)
+\begin{DoxyCompactList}\small\item\em Called when a remote player entered the room. This Player is already added to the playerlist. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_rockwell_lobby_a94c1fe03142d0854fd7724b418c22984}{On\+Player\+Left\+Room}} (Player player)
+\begin{DoxyCompactList}\small\item\em Called when a remote player left the room or became inactive. Check other\+Player.\+Is\+Inactive. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rockwell_lobby_a6b3b9b4ac5fb247de4f9b75c9ada02ec}{Create\+New\+Room}} (string group\+Name, string headset\+Name)
+\begin{DoxyCompactList}\small\item\em creates a new \char`\"{}room\char`\"{} for the new group and tells the group leader they are the master \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rockwell_lobby_a674c5c82b8b7727fad62aaa92e812495}{Join\+Group\+Room}} (string group\+Name, string headset\+Name)
+\begin{DoxyCompactList}\small\item\em adds the player to the existing group and tells the player what group they joined \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rockwell_lobby_a9fe65f6d7bc47852b4ea2bbfdea439b2}{Remove\+User\+From\+Group}} (\mbox{\hyperlink{class_proto_1_1_sbee_1_1_user}{Proto.\+Sbee.\+User}} u)
+\begin{DoxyCompactList}\small\item\em removes the client from the group and tells that player that they were removed \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_rockwell_lobby_a33291e5acc83f8a9f2675c20792dbc68}{Change\+Leader}} (int new\+Actor\+Num, int old\+Actor\+Num)
+\begin{DoxyCompactList}\small\item\em changes the leader of the group \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_rockwell_lobby_a9a593cdb157410ab20711a17a04a70bb}\label{class_rockwell_lobby_a9a593cdb157410ab20711a17a04a70bb}} 
+static \mbox{\hyperlink{class_rockwell_lobby}{Rockwell\+Lobby}} {\bfseries Instance}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+this class manages the lobby and the groups. based off the Launcher class in Photon\textquotesingle{}s tutorial 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_rockwell_lobby_a33291e5acc83f8a9f2675c20792dbc68}\label{class_rockwell_lobby_a33291e5acc83f8a9f2675c20792dbc68}} 
+\index{RockwellLobby@{RockwellLobby}!ChangeLeader@{ChangeLeader}}
+\index{ChangeLeader@{ChangeLeader}!RockwellLobby@{RockwellLobby}}
+\doxysubsubsection{\texorpdfstring{ChangeLeader()}{ChangeLeader()}}
+{\footnotesize\ttfamily void Rockwell\+Lobby.\+Change\+Leader (\begin{DoxyParamCaption}\item[{int}]{new\+Actor\+Num,  }\item[{int}]{old\+Actor\+Num }\end{DoxyParamCaption})}
+
+
+
+changes the leader of the group 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Actor\+Num} & the player\textquotesingle{}s Actor number that is the new leader\\
+\hline
+{\em old\+Actor\+Num} & the player\textquotesingle{}s Actor number that is being replaced as the leader\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rockwell_lobby_a3c98b411eb74b5c9efe61c4040aed04c}\label{class_rockwell_lobby_a3c98b411eb74b5c9efe61c4040aed04c}} 
+\index{RockwellLobby@{RockwellLobby}!Connect@{Connect}}
+\index{Connect@{Connect}!RockwellLobby@{RockwellLobby}}
+\doxysubsubsection{\texorpdfstring{Connect()}{Connect()}}
+{\footnotesize\ttfamily void Rockwell\+Lobby.\+Connect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Start the connection process. 
+
+
+\begin{DoxyItemize}
+\item If already connected, we attempt joining a random room
+\item if not yet connected, Connect this application instance to Photon Cloud Network
+\end{DoxyItemize}\mbox{\Hypertarget{class_rockwell_lobby_a6b3b9b4ac5fb247de4f9b75c9ada02ec}\label{class_rockwell_lobby_a6b3b9b4ac5fb247de4f9b75c9ada02ec}} 
+\index{RockwellLobby@{RockwellLobby}!CreateNewRoom@{CreateNewRoom}}
+\index{CreateNewRoom@{CreateNewRoom}!RockwellLobby@{RockwellLobby}}
+\doxysubsubsection{\texorpdfstring{CreateNewRoom()}{CreateNewRoom()}}
+{\footnotesize\ttfamily void Rockwell\+Lobby.\+Create\+New\+Room (\begin{DoxyParamCaption}\item[{string}]{group\+Name,  }\item[{string}]{headset\+Name }\end{DoxyParamCaption})}
+
+
+
+creates a new \char`\"{}room\char`\"{} for the new group and tells the group leader they are the master 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\+Name} & the name of the group\\
+\hline
+{\em headset\+Name} & the name of the headset\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rockwell_lobby_a674c5c82b8b7727fad62aaa92e812495}\label{class_rockwell_lobby_a674c5c82b8b7727fad62aaa92e812495}} 
+\index{RockwellLobby@{RockwellLobby}!JoinGroupRoom@{JoinGroupRoom}}
+\index{JoinGroupRoom@{JoinGroupRoom}!RockwellLobby@{RockwellLobby}}
+\doxysubsubsection{\texorpdfstring{JoinGroupRoom()}{JoinGroupRoom()}}
+{\footnotesize\ttfamily void Rockwell\+Lobby.\+Join\+Group\+Room (\begin{DoxyParamCaption}\item[{string}]{group\+Name,  }\item[{string}]{headset\+Name }\end{DoxyParamCaption})}
+
+
+
+adds the player to the existing group and tells the player what group they joined 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\+Name} & the name of the group they are joining\\
+\hline
+{\em headset\+Name} & the name of the headset\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_rockwell_lobby_aafb421e3a5d5bf87aaada0f0963bd632}\label{class_rockwell_lobby_aafb421e3a5d5bf87aaada0f0963bd632}} 
+\index{RockwellLobby@{RockwellLobby}!OnConnectedToMaster@{OnConnectedToMaster}}
+\index{OnConnectedToMaster@{OnConnectedToMaster}!RockwellLobby@{RockwellLobby}}
+\doxysubsubsection{\texorpdfstring{OnConnectedToMaster()}{OnConnectedToMaster()}}
+{\footnotesize\ttfamily override void Rockwell\+Lobby.\+On\+Connected\+To\+Master (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Called after the connection to the master is established and authenticated 
+
+\mbox{\Hypertarget{class_rockwell_lobby_a1dc6ae598151765b958c9756e6ac91ff}\label{class_rockwell_lobby_a1dc6ae598151765b958c9756e6ac91ff}} 
+\index{RockwellLobby@{RockwellLobby}!OnCreateRoomFailed@{OnCreateRoomFailed}}
+\index{OnCreateRoomFailed@{OnCreateRoomFailed}!RockwellLobby@{RockwellLobby}}
+\doxysubsubsection{\texorpdfstring{OnCreateRoomFailed()}{OnCreateRoomFailed()}}
+{\footnotesize\ttfamily override void Rockwell\+Lobby.\+On\+Create\+Room\+Failed (\begin{DoxyParamCaption}\item[{short}]{return\+Code,  }\item[{string}]{message }\end{DoxyParamCaption})}
+
+
+
+Called when the server couldn\textquotesingle{}t create a room (Op\+Create\+Room failed). 
+
+\mbox{\Hypertarget{class_rockwell_lobby_aad772eeccf33833e952247dfae17fff8}\label{class_rockwell_lobby_aad772eeccf33833e952247dfae17fff8}} 
+\index{RockwellLobby@{RockwellLobby}!OnDisconnected@{OnDisconnected}}
+\index{OnDisconnected@{OnDisconnected}!RockwellLobby@{RockwellLobby}}
+\doxysubsubsection{\texorpdfstring{OnDisconnected()}{OnDisconnected()}}
+{\footnotesize\ttfamily override void Rockwell\+Lobby.\+On\+Disconnected (\begin{DoxyParamCaption}\item[{Disconnect\+Cause}]{cause }\end{DoxyParamCaption})}
+
+
+
+Called after disconnecting from the Photon server. 
+
+\mbox{\Hypertarget{class_rockwell_lobby_af7b835f23ea2b9ed31b24eb4debaec00}\label{class_rockwell_lobby_af7b835f23ea2b9ed31b24eb4debaec00}} 
+\index{RockwellLobby@{RockwellLobby}!OnJoinedRoom@{OnJoinedRoom}}
+\index{OnJoinedRoom@{OnJoinedRoom}!RockwellLobby@{RockwellLobby}}
+\doxysubsubsection{\texorpdfstring{OnJoinedRoom()}{OnJoinedRoom()}}
+{\footnotesize\ttfamily override void Rockwell\+Lobby.\+On\+Joined\+Room (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Called when entering a room (by creating or joining it). Called on all clients (including the Master Client). 
+
+This method is commonly used to instantiate player characters. If a match has to be started \char`\"{}actively\char`\"{}, you can call an Pun\+R\+PC triggered by a user\textquotesingle{}s button-\/press or a timer.
+
+When this is called, you can usually already access the existing players in the room via Photon\+Network.\+Player\+List. Also, all custom properties should be already available as Room.\+custom\+Properties. Check Room..Player\+Count to find out if enough players are in the room to start playing. \mbox{\Hypertarget{class_rockwell_lobby_a8e7a0e82f7a3b8e59ca4dd5063ba8fe5}\label{class_rockwell_lobby_a8e7a0e82f7a3b8e59ca4dd5063ba8fe5}} 
+\index{RockwellLobby@{RockwellLobby}!OnJoinRandomFailed@{OnJoinRandomFailed}}
+\index{OnJoinRandomFailed@{OnJoinRandomFailed}!RockwellLobby@{RockwellLobby}}
+\doxysubsubsection{\texorpdfstring{OnJoinRandomFailed()}{OnJoinRandomFailed()}}
+{\footnotesize\ttfamily override void Rockwell\+Lobby.\+On\+Join\+Random\+Failed (\begin{DoxyParamCaption}\item[{short}]{return\+Code,  }\item[{string}]{message }\end{DoxyParamCaption})}
+
+
+
+Called when a Join\+Random() call failed. The parameter provides Error\+Code and message. 
+
+Most likely all rooms are full or no rooms are available. ~\newline
+ \mbox{\Hypertarget{class_rockwell_lobby_aa1fcf01e289ecc19a95b98fa284160bd}\label{class_rockwell_lobby_aa1fcf01e289ecc19a95b98fa284160bd}} 
+\index{RockwellLobby@{RockwellLobby}!OnMasterClientSwitched@{OnMasterClientSwitched}}
+\index{OnMasterClientSwitched@{OnMasterClientSwitched}!RockwellLobby@{RockwellLobby}}
+\doxysubsubsection{\texorpdfstring{OnMasterClientSwitched()}{OnMasterClientSwitched()}}
+{\footnotesize\ttfamily override void Rockwell\+Lobby.\+On\+Master\+Client\+Switched (\begin{DoxyParamCaption}\item[{Player}]{new\+Master\+Client }\end{DoxyParamCaption})}
+
+
+
+Called after switching to a new Master\+Client when the current one leaves. 
+
+\mbox{\Hypertarget{class_rockwell_lobby_a896fd145127303d29cdfea795f9d7bf8}\label{class_rockwell_lobby_a896fd145127303d29cdfea795f9d7bf8}} 
+\index{RockwellLobby@{RockwellLobby}!OnPlayerEnteredRoom@{OnPlayerEnteredRoom}}
+\index{OnPlayerEnteredRoom@{OnPlayerEnteredRoom}!RockwellLobby@{RockwellLobby}}
+\doxysubsubsection{\texorpdfstring{OnPlayerEnteredRoom()}{OnPlayerEnteredRoom()}}
+{\footnotesize\ttfamily override void Rockwell\+Lobby.\+On\+Player\+Entered\+Room (\begin{DoxyParamCaption}\item[{Player}]{new\+Player }\end{DoxyParamCaption})}
+
+
+
+Called when a remote player entered the room. This Player is already added to the playerlist. 
+
+\mbox{\Hypertarget{class_rockwell_lobby_a94c1fe03142d0854fd7724b418c22984}\label{class_rockwell_lobby_a94c1fe03142d0854fd7724b418c22984}} 
+\index{RockwellLobby@{RockwellLobby}!OnPlayerLeftRoom@{OnPlayerLeftRoom}}
+\index{OnPlayerLeftRoom@{OnPlayerLeftRoom}!RockwellLobby@{RockwellLobby}}
+\doxysubsubsection{\texorpdfstring{OnPlayerLeftRoom()}{OnPlayerLeftRoom()}}
+{\footnotesize\ttfamily override void Rockwell\+Lobby.\+On\+Player\+Left\+Room (\begin{DoxyParamCaption}\item[{Player}]{player }\end{DoxyParamCaption})}
+
+
+
+Called when a remote player left the room or became inactive. Check other\+Player.\+Is\+Inactive. 
+
+\mbox{\Hypertarget{class_rockwell_lobby_a9fe65f6d7bc47852b4ea2bbfdea439b2}\label{class_rockwell_lobby_a9fe65f6d7bc47852b4ea2bbfdea439b2}} 
+\index{RockwellLobby@{RockwellLobby}!RemoveUserFromGroup@{RemoveUserFromGroup}}
+\index{RemoveUserFromGroup@{RemoveUserFromGroup}!RockwellLobby@{RockwellLobby}}
+\doxysubsubsection{\texorpdfstring{RemoveUserFromGroup()}{RemoveUserFromGroup()}}
+{\footnotesize\ttfamily void Rockwell\+Lobby.\+Remove\+User\+From\+Group (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_proto_1_1_sbee_1_1_user}{Proto.\+Sbee.\+User}}}]{u }\end{DoxyParamCaption})}
+
+
+
+removes the client from the group and tells that player that they were removed 
+
+
+\begin{DoxyParams}{Parameters}
+{\em u} & the user that is being removed for the group\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Perforce/498\+\_\+\+V\+R\+\_\+\+Skunkworks/\+New Rockwell/\+Assets/\+Scripts/\+Network Scripts/Rockwell\+Lobby.\+cs\end{DoxyCompactItemize}

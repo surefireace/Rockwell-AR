@@ -1,0 +1,19 @@
+Stuff still needing to be implemented, in no particular order:
+
+1. delete unnecessary example scenes and assets, they just take up space but make sure it is not being used in any scene for the project so it should only be done once the project is nearly finished. 
+	once the example projects for Photon are deleted Ctrl+Shift+Alt+P to access "PhotonServerSettings" open the RPC's drop-down then clear and refresh the RPC's. doing so will update the RPC list 
+	and ALL builds will need to be recreated.
+	
+	P.S. this includes code in Donovan Sandbox and DebugWindow.cs because cursors, voice commands, and debug tools aren't intended for the released product.
+	leaving them in is fine if they are being used, but DebugWindow would need its text length limited so it doesn't cause performance hits. voice commands
+	should also go off the updated MRTK v2 scripts not the TestVoiceCommands.cs, this also applies to TestCursor.cs , TestGazeManager.cs, and TestGestureManager.cs.
+	
+2. loading of the save file for the experience so the application can be used for multiple exhibits.
+
+3. get Docent models textured and animated. 
+
+4. update documentation as the project changes.
+
+5. get some of the actual assets from Rockwell and do a dry run to ensure application works as intended.
+
+6. fix any bugs that can or should be fixed and polish. see "Known Bugs.txt".

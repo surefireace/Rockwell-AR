@@ -1,0 +1,22 @@
+general help links for hololens
+
+https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/BuildAndDeploy.html
+https://docs.microsoft.com/en-us/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device
+https://docs.microsoft.com/en-us/windows/mixed-reality/using-visual-studio
+https://docs.microsoft.com/en-us/windows/mixed-reality/gestures#bloom
+https://docs.microsoft.com/en-us/windows/mixed-reality/configure-unity-project
+
+help with hololens + Vuforia
+
+https://library.vuforia.com/content/vuforia-library/en/articles/Training/Developing-Vuforia-Apps-for-HoloLens.html
+https://developer.vuforia.com/forum/hololens/sample-has-no-stable-tracking
+
+links for remote server
+
+https://dev-doc.photonengine.com/en-us/pun/v2/getting-started/initial-setup
+https://doc.photonengine.com/en-us/server/current/getting-started/photon-server-in-5min#game_server_ip_config
+
+Hololens 2 stuff
+https://docs.microsoft.com/en-us/windows/mixed-reality/mrlearning-base-ch2
+https://docs.microsoft.com/en-us/windows/mixed-reality/using-the-hololens-emulator
+https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html

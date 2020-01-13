@@ -1,0 +1,147 @@
+\hypertarget{class_book}{}\doxysection{Book Class Reference}
+\label{class_book}\index{Book@{Book}}
+
+
+class used for the book interaction. triggers the animations for the book  
+
+
+Inheritance diagram for Book\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_book}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_book_a80db0839a09301e5ba7ed7032cf216f6}{Init}} ()
+\begin{DoxyCompactList}\small\item\em initializes the book by assigning the starting pages textures. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_book_ab5eee043d01e2aa188eed62a152cc1de}{Open}} ()
+\begin{DoxyCompactList}\small\item\em plays the books open animation \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_book_a6b87a1d9d7bad6d6de73688ebabe25a1}{Close}} ()
+\begin{DoxyCompactList}\small\item\em closes and resets the book \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_book_a125e9a2baa310b7fbd1462be7084e309}{Show\+Book}} (bool is\+Visible)
+\begin{DoxyCompactList}\small\item\em shows or hides the book based of parameter \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_book_ae0dc3dee83b808e7ae486779f66f3896}{Page\+Turn\+Right}} ()
+\begin{DoxyCompactList}\small\item\em plays the page turning animation and changes the apropiate textures \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_book_a0cab4447d40094d2a81c35fab089639f}{Page\+Turn\+Left}} ()
+\begin{DoxyCompactList}\small\item\em plays the back page turning animation backward and changes the apropiate textures \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_book_a9056170cbe9ffd99261dc6d243623821}{Page\+Turn\+Over\+Right}} ()
+\begin{DoxyCompactList}\small\item\em resets the page turning animation and changes the apropiate textures \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_book_a2cad5c5d7a3201a05da55f6695f4eb09}{Page\+Turn\+Over\+Left}} ()
+\begin{DoxyCompactList}\small\item\em resets the back page turning animation and changes the apropiate textures \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_book_a710e30984bb8ce5a5f17d220dd6655c3}{Pan\+Change\+Page}} (Microsoft.\+Mixed\+Reality.\+Toolkit.\+U\+I.\+Hand\+Pan\+Event\+Data pan\+Event\+Data)
+\begin{DoxyCompactList}\small\item\em to change the page based on movements with the hand pan guesture \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+class used for the book interaction. triggers the animations for the book 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_book_a6b87a1d9d7bad6d6de73688ebabe25a1}\label{class_book_a6b87a1d9d7bad6d6de73688ebabe25a1}} 
+\index{Book@{Book}!Close@{Close}}
+\index{Close@{Close}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{Close()}{Close()}}
+{\footnotesize\ttfamily void Book.\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+closes and resets the book 
+
+\mbox{\Hypertarget{class_book_a80db0839a09301e5ba7ed7032cf216f6}\label{class_book_a80db0839a09301e5ba7ed7032cf216f6}} 
+\index{Book@{Book}!Init@{Init}}
+\index{Init@{Init}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Book.\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+initializes the book by assigning the starting pages textures. 
+
+\mbox{\Hypertarget{class_book_ab5eee043d01e2aa188eed62a152cc1de}\label{class_book_ab5eee043d01e2aa188eed62a152cc1de}} 
+\index{Book@{Book}!Open@{Open}}
+\index{Open@{Open}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{Open()}{Open()}}
+{\footnotesize\ttfamily void Book.\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+plays the books open animation 
+
+\mbox{\Hypertarget{class_book_a0cab4447d40094d2a81c35fab089639f}\label{class_book_a0cab4447d40094d2a81c35fab089639f}} 
+\index{Book@{Book}!PageTurnLeft@{PageTurnLeft}}
+\index{PageTurnLeft@{PageTurnLeft}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{PageTurnLeft()}{PageTurnLeft()}}
+{\footnotesize\ttfamily void Book.\+Page\+Turn\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+plays the back page turning animation backward and changes the apropiate textures 
+
+\mbox{\Hypertarget{class_book_a2cad5c5d7a3201a05da55f6695f4eb09}\label{class_book_a2cad5c5d7a3201a05da55f6695f4eb09}} 
+\index{Book@{Book}!PageTurnOverLeft@{PageTurnOverLeft}}
+\index{PageTurnOverLeft@{PageTurnOverLeft}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{PageTurnOverLeft()}{PageTurnOverLeft()}}
+{\footnotesize\ttfamily void Book.\+Page\+Turn\+Over\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+resets the back page turning animation and changes the apropiate textures 
+
+\mbox{\Hypertarget{class_book_a9056170cbe9ffd99261dc6d243623821}\label{class_book_a9056170cbe9ffd99261dc6d243623821}} 
+\index{Book@{Book}!PageTurnOverRight@{PageTurnOverRight}}
+\index{PageTurnOverRight@{PageTurnOverRight}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{PageTurnOverRight()}{PageTurnOverRight()}}
+{\footnotesize\ttfamily void Book.\+Page\+Turn\+Over\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+resets the page turning animation and changes the apropiate textures 
+
+\mbox{\Hypertarget{class_book_ae0dc3dee83b808e7ae486779f66f3896}\label{class_book_ae0dc3dee83b808e7ae486779f66f3896}} 
+\index{Book@{Book}!PageTurnRight@{PageTurnRight}}
+\index{PageTurnRight@{PageTurnRight}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{PageTurnRight()}{PageTurnRight()}}
+{\footnotesize\ttfamily void Book.\+Page\+Turn\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+plays the page turning animation and changes the apropiate textures 
+
+\mbox{\Hypertarget{class_book_a710e30984bb8ce5a5f17d220dd6655c3}\label{class_book_a710e30984bb8ce5a5f17d220dd6655c3}} 
+\index{Book@{Book}!PanChangePage@{PanChangePage}}
+\index{PanChangePage@{PanChangePage}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{PanChangePage()}{PanChangePage()}}
+{\footnotesize\ttfamily void Book.\+Pan\+Change\+Page (\begin{DoxyParamCaption}\item[{Microsoft.\+Mixed\+Reality.\+Toolkit.\+U\+I.\+Hand\+Pan\+Event\+Data}]{pan\+Event\+Data }\end{DoxyParamCaption})}
+
+
+
+to change the page based on movements with the hand pan guesture 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pan\+Event\+Data} & the change in pan guesture\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_book_a125e9a2baa310b7fbd1462be7084e309}\label{class_book_a125e9a2baa310b7fbd1462be7084e309}} 
+\index{Book@{Book}!ShowBook@{ShowBook}}
+\index{ShowBook@{ShowBook}!Book@{Book}}
+\doxysubsubsection{\texorpdfstring{ShowBook()}{ShowBook()}}
+{\footnotesize\ttfamily void Book.\+Show\+Book (\begin{DoxyParamCaption}\item[{bool}]{is\+Visible }\end{DoxyParamCaption})}
+
+
+
+shows or hides the book based of parameter 
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Visible} & ture shows the book. false hides it\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Perforce/498\+\_\+\+V\+R\+\_\+\+Skunkworks/\+New Rockwell/\+Assets/\+Scripts/Book.\+cs\end{DoxyCompactItemize}

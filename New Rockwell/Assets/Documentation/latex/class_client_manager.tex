@@ -1,0 +1,144 @@
+\hypertarget{class_client_manager}{}\doxysection{Client\+Manager Class Reference}
+\label{class_client_manager}\index{ClientManager@{ClientManager}}
+
+
+this is the local class the holds the headset info and manages the group  
+
+
+Inheritance diagram for Client\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_client_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_client_manager_a17f22ca2deed84e7eccd05d9fff6f1e2}{Reset}} ()
+\item 
+void \mbox{\hyperlink{class_client_manager_ac39c8f2662c319366f2455a3435cf03a}{Enable\+Buttons}} ()
+\begin{DoxyCompactList}\small\item\em activates the buttons for controlling the interactions if the client is a group leader \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_client_manager_aabd9586bbcac588dba911efb2049a137}{Init\+Device\+Info}} ()
+\begin{DoxyCompactList}\small\item\em initializes the client\textquotesingle{}s player name and batttery life. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_client_manager_a3a07c04dc385945a3136848e2f72880c}{Trigger\+Content}} (\mbox{\hyperlink{class_content_manager}{Content\+Manager}} cont\+Man)
+\begin{DoxyCompactList}\small\item\em readys the clients to start content, starts content if alone, or starts the timer if the master \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_client_manager_adc3c2525ff65ef403eccc9bcd0675912}{Play\+Pause\+Interactions}} ()
+\begin{DoxyCompactList}\small\item\em for the play/pause buttons for the group leader and tells the other group members to play/pause as well \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_client_manager_a524f33e2f71f95cfa466c4fab45e8ed0}{Stop\+Interactions}} ()
+\begin{DoxyCompactList}\small\item\em for the close buttons for the group leader and tells the other group members to stop interactions as well \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_client_manager_abce89d6462660039dd911bfb3e212679}{Add\+Group\+Member}} (int actor\+Num)
+\begin{DoxyCompactList}\small\item\em adds a member to the group \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_client_manager_a01b91935db057b3444687e6ea5aa948d}\label{class_client_manager_a01b91935db057b3444687e6ea5aa948d}} 
+bool {\bfseries Is\+Leader} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_client_manager_ac00865d9a2948c8753809f4f47339849}\label{class_client_manager_ac00865d9a2948c8753809f4f47339849}} 
+float {\bfseries Charge} = 0\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_client_manager_a56616ae1ec18da824a822153f9f2ad45}\label{class_client_manager_a56616ae1ec18da824a822153f9f2ad45}} 
+string {\bfseries Device\+Name} = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_client_manager_ad2be93e2d5fec4aacb0e4d2604d8a794}\label{class_client_manager_ad2be93e2d5fec4aacb0e4d2604d8a794}} 
+string {\bfseries Group} = \char`\"{}\char`\"{}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_client_manager_a6216fd4db5db15ba765b416fdc19de45}\label{class_client_manager_a6216fd4db5db15ba765b416fdc19de45}} 
+int {\bfseries Leader} = -\/1\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_client_manager_a118bff3f5cd8e2fa78c8e7646fa43c4e}\label{class_client_manager_a118bff3f5cd8e2fa78c8e7646fa43c4e}} 
+static \mbox{\hyperlink{class_client_manager}{Client\+Manager}} {\bfseries Instance}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+this is the local class the holds the headset info and manages the group 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_client_manager_abce89d6462660039dd911bfb3e212679}\label{class_client_manager_abce89d6462660039dd911bfb3e212679}} 
+\index{ClientManager@{ClientManager}!AddGroupMember@{AddGroupMember}}
+\index{AddGroupMember@{AddGroupMember}!ClientManager@{ClientManager}}
+\doxysubsubsection{\texorpdfstring{AddGroupMember()}{AddGroupMember()}}
+{\footnotesize\ttfamily void Client\+Manager.\+Add\+Group\+Member (\begin{DoxyParamCaption}\item[{int}]{actor\+Num }\end{DoxyParamCaption})}
+
+
+
+adds a member to the group 
+
+
+\begin{DoxyParams}{Parameters}
+{\em actor\+Num} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_client_manager_ac39c8f2662c319366f2455a3435cf03a}\label{class_client_manager_ac39c8f2662c319366f2455a3435cf03a}} 
+\index{ClientManager@{ClientManager}!EnableButtons@{EnableButtons}}
+\index{EnableButtons@{EnableButtons}!ClientManager@{ClientManager}}
+\doxysubsubsection{\texorpdfstring{EnableButtons()}{EnableButtons()}}
+{\footnotesize\ttfamily void Client\+Manager.\+Enable\+Buttons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+activates the buttons for controlling the interactions if the client is a group leader 
+
+\mbox{\Hypertarget{class_client_manager_aabd9586bbcac588dba911efb2049a137}\label{class_client_manager_aabd9586bbcac588dba911efb2049a137}} 
+\index{ClientManager@{ClientManager}!InitDeviceInfo@{InitDeviceInfo}}
+\index{InitDeviceInfo@{InitDeviceInfo}!ClientManager@{ClientManager}}
+\doxysubsubsection{\texorpdfstring{InitDeviceInfo()}{InitDeviceInfo()}}
+{\footnotesize\ttfamily void Client\+Manager.\+Init\+Device\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+initializes the client\textquotesingle{}s player name and batttery life. 
+
+\mbox{\Hypertarget{class_client_manager_adc3c2525ff65ef403eccc9bcd0675912}\label{class_client_manager_adc3c2525ff65ef403eccc9bcd0675912}} 
+\index{ClientManager@{ClientManager}!PlayPauseInteractions@{PlayPauseInteractions}}
+\index{PlayPauseInteractions@{PlayPauseInteractions}!ClientManager@{ClientManager}}
+\doxysubsubsection{\texorpdfstring{PlayPauseInteractions()}{PlayPauseInteractions()}}
+{\footnotesize\ttfamily void Client\+Manager.\+Play\+Pause\+Interactions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+for the play/pause buttons for the group leader and tells the other group members to play/pause as well 
+
+\mbox{\Hypertarget{class_client_manager_a17f22ca2deed84e7eccd05d9fff6f1e2}\label{class_client_manager_a17f22ca2deed84e7eccd05d9fff6f1e2}} 
+\index{ClientManager@{ClientManager}!Reset@{Reset}}
+\index{Reset@{Reset}!ClientManager@{ClientManager}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Client\+Manager.\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+
+
+\mbox{\Hypertarget{class_client_manager_a524f33e2f71f95cfa466c4fab45e8ed0}\label{class_client_manager_a524f33e2f71f95cfa466c4fab45e8ed0}} 
+\index{ClientManager@{ClientManager}!StopInteractions@{StopInteractions}}
+\index{StopInteractions@{StopInteractions}!ClientManager@{ClientManager}}
+\doxysubsubsection{\texorpdfstring{StopInteractions()}{StopInteractions()}}
+{\footnotesize\ttfamily void Client\+Manager.\+Stop\+Interactions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+for the close buttons for the group leader and tells the other group members to stop interactions as well 
+
+\mbox{\Hypertarget{class_client_manager_a3a07c04dc385945a3136848e2f72880c}\label{class_client_manager_a3a07c04dc385945a3136848e2f72880c}} 
+\index{ClientManager@{ClientManager}!TriggerContent@{TriggerContent}}
+\index{TriggerContent@{TriggerContent}!ClientManager@{ClientManager}}
+\doxysubsubsection{\texorpdfstring{TriggerContent()}{TriggerContent()}}
+{\footnotesize\ttfamily void Client\+Manager.\+Trigger\+Content (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_content_manager}{Content\+Manager}}}]{cont\+Man }\end{DoxyParamCaption})}
+
+
+
+readys the clients to start content, starts content if alone, or starts the timer if the master 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cont\+Man} & the content\+Manager that is being activated\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Perforce/498\+\_\+\+V\+R\+\_\+\+Skunkworks/\+New Rockwell/\+Assets/\+Scripts/\+Network Scripts/Client\+Manager.\+cs\end{DoxyCompactItemize}
