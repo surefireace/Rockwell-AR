@@ -4,5 +4,5 @@
 Programming - Donovan Colen and Culham Otton
 UI Programming - Sangbu Kim (S.bee)
 UI Design - Stephanie cheung
-Modeling - Phil Kauffold 
+Modeling - Phil Kauffold and Cristian Benito
 Concept art - Pavel Eryzhenskii
